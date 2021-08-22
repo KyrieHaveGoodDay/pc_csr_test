@@ -1084,7 +1084,7 @@ img {
 
 @media screen and (max-width: 414px) {
   .lesson2 .lesson2_box .lesson2_bottom {
-    padding-top: 1rem;
+    padding-top: 3rem;
     -ms-grid-rows: 23% 70%;
         grid-template-rows: 23% 70%;
   }
