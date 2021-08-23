@@ -5,6 +5,7 @@
 .csr_width {
     max-width: 1250px;
     margin: 0 auto;
+    overflow: hidden;
     @media screen and (max-width: 1250px) {
         width: 100%;
         padding: 0 15px;
@@ -30,6 +31,7 @@
     height: 590px;
     position: relative;
     margin-top: 2rem;
+    
     @media screen and (max-width: 768px) {
         // border: 1px solid black;
         height: 900px;
@@ -41,6 +43,7 @@
         // border: 1px solid black;
         height: 100%;
         position: relative;
+        
         @media screen and (max-width: 1250px) {
             margin: 0;
         }
@@ -1114,14 +1117,25 @@
                 ul {
                     // border: 1px solid black;
                     display: grid;
-                    padding: 0 100px;
                     grid-template-columns: repeat(3, 1fr);
                     grid-gap: 20px;
+                    // display: flex;
+                    // flex-wrap: wrap;
+                    padding: 0 100px;
+
                     padding-top: 1rem;
                     padding-bottom: 2rem;
                     margin: 0;
-                    @media screen and (max-width: 768px) {
+                    @media screen and (max-width: 950px) {
                         grid-template-columns: repeat(2, 1fr);
+                    }
+                    @media screen and (max-width: 768px) {
+                        grid-template-columns: repeat(1, 1fr);
+                        // padding: 0 50px;
+                        padding: 0 20px;
+
+                        padding-top: 1rem;
+                        padding-bottom: 2rem;
                     }
                     @media screen and (max-width: 414px) {
                         display: block;
@@ -1137,6 +1151,7 @@
                         color: #fff;
                         border-radius: 20px;
                         transition: 0.5s;
+                        // width: 80%;
                         height: 25px;
                         &:hover {
                             background-color: #fff;

@@ -523,6 +523,7 @@ img {
 .csr_width {
   max-width: 1250px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 1250px) {
@@ -2033,19 +2034,29 @@ img {
 .keywork .keyworkBox .keyworkContent .keyworkMain ul {
   display: -ms-grid;
   display: grid;
-  padding: 0 100px;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
+  padding: 0 100px;
   padding-top: 1rem;
   padding-bottom: 2rem;
   margin: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 950px) {
   .keywork .keyworkBox .keyworkContent .keyworkMain ul {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .keywork .keyworkBox .keyworkContent .keyworkMain ul {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    padding: 0 20px;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
   }
 }
 

@@ -70,9 +70,11 @@ var swiper = new Swiper(".mySwiper", {
 
 // 偵測寬度 到1250加入輪播套件
 $(document).ready(function () {
-  $(window).resize(function () {
+
+    // var wjb = screen.width;
     var wdth = $(window).width();
     // console.log(wdth);
+    
     if (wdth < 1250) {
       $('.company').addClass('swiper-container lesson4_slide')
       $('.company_slide').addClass('swiper-wrapper')
@@ -105,7 +107,7 @@ $(document).ready(function () {
       $('.company_2').removeClass('swiper-slide')
       $('.company_3').removeClass('swiper-slide')
     }
-  });
+
 });
 
 // gsap
