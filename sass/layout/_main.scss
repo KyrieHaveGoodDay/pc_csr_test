@@ -1,11 +1,11 @@
 .main {
     background-color: #f2e3bb;
-    // overflow: hidden;
+    overflow: hidden;
 }
 .csr_width {
     max-width: 1250px;
     margin: 0 auto;
-    overflow: hidden;
+    // overflow: hidden;
     @media screen and (max-width: 1250px) {
         width: 100%;
         padding: 0 15px;
@@ -749,6 +749,7 @@
                 img {
                     width: 40%;
                     transform: translateY(-2px);
+                    vertical-align:middle !important;
                 }
             }
         }
